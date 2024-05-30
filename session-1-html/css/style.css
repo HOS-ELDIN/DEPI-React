@@ -760,6 +760,10 @@ video {
   width: 1.25rem;
   height: 1.25rem;
 }
+.size-\[52px\] {
+  width: 52px;
+  height: 52px;
+}
 .h-1 {
   height: 0.25rem;
 }
@@ -769,11 +773,17 @@ video {
 .h-2 {
   height: 0.5rem;
 }
+.h-5 {
+  height: 1.25rem;
+}
 .min-h-dvh {
   min-height: 100dvh;
 }
 .w-1 {
   width: 0.25rem;
+}
+.w-6 {
+  width: 1.5rem;
 }
 .w-9 {
   width: 2.25rem;
@@ -799,6 +809,9 @@ video {
 }
 .max-w-\[240px\] {
   max-width: 240px;
+}
+.max-w-\[356px\] {
+  max-width: 356px;
 }
 .max-w-\[641px\] {
   max-width: 641px;
@@ -1071,6 +1084,9 @@ video {
 }
 .grid-cols-\[repeat\(auto-fill\2c _minmax\(356px\2c _1fr\)\)\] {
   grid-template-columns: repeat(auto-fill, minmax(356px, 1fr));
+}
+.grid-cols-\[repeat\(auto-fit\2c _minmax\(300px\2c _1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .flex-row {
   flex-direction: row;
@@ -1594,6 +1610,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-\[\#1a252f\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 37 47 / var(--tw-bg-opacity));
+}
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -1693,6 +1713,10 @@ video {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
 }
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -1767,9 +1791,17 @@ video {
 .text-\[64px\] {
   font-size: 64px;
 }
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .font-bold {
   font-weight: 700;
@@ -1826,6 +1858,10 @@ video {
 .stacked-fractions {
   --tw-numeric-fraction: stacked-fractions;
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
+}
+.text-\[\#1abc9c\] {
+  --tw-text-opacity: 1;
+  color: rgb(26 188 156 / var(--tw-text-opacity));
 }
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
@@ -2208,6 +2244,10 @@ form textarea {
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.hover\:text-sec:hover {
+  --tw-text-opacity: 1;
+  color: rgb(44 62 80 / var(--tw-text-opacity));
 }
 .before\:hover\:text-center:hover::before {
   content: var(--tw-content);
