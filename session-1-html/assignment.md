@@ -37,3 +37,5 @@
 ## Practical Assignment :
 
 4. [**Implement in html**](https://startbootstrap.com/previews/freelancer)
+   [code in github](https://github.com/HOS-ELDIN/DEPI-React/tree/main/session-1-html)
+   [live preview](https://hos-eldin.github.io/DEPI-React/session-1-html/index.html)
