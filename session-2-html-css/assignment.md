@@ -2,17 +2,18 @@
 
 ## Html5Exam:
 
-1. Question1 : Answer The Following Questions
+### 1. Question1 : Answer The Following Questions
 
-   1. What is the use of the \<link\> tag?
+#### 1. What is the use of the \<link\> tag?
 
       - linking an external resource like (css files, fonts, cdns)
 
-   2. With which tags is the \<source\> element associated?
+#### 2. With which tags is the \<source\> element associated?
 
       - media tags like ( picture, audio, video)
 
-   3. What is the best way to code the sample shown?
+#### 3. What is the best way to code the sample shown?
+
       <details open>
          <summary>
             title
@@ -20,23 +21,24 @@
          <p>desc</p>
       </details>
 
-   4. When should you use \<ol\> and \<ul\> elements?
+#### 4. When should you use \<ol\> and \<ul\> elements?
 
       - ol : is for ordered lists (list with numbering)
       - ul : is for unordered lists (list without numbering) like the listing used in this answer or for nav menus etc.
 
-   5. How do you confirm that a document is written in HTML5?
+#### 5. How do you confirm that a document is written in HTML5?
 
       - by checking the doctype tag at the very beginning of the file. \<!DOCTYPE html\>
       - find semantic elements tags in the code
 
-   6. What does the code shown below accomplish?
+#### 6. What does the code shown below accomplish?
 
       - it will render a different image depending on screen width (viewport size)
       - it will render an image from the first source if the width of the screen >= 1000px
       - it will render an image from the second source if the width of the screen >= 750px and < 1000px
 
-   7. What code will produce this table?
+#### 7. What code will produce this table?
+
       <table>
       <colgroup>
       <col style="background-color: yellow;" span="2">
@@ -57,7 +59,8 @@
       </tbody>
       </table>
 
-   8. What code will produce this table?
+#### 8. What code will produce this table?
+
       <ul>
           <li>
             Office Supplies
@@ -74,7 +77,8 @@
           </li>
         </ul>
 
-   9. What code will produce this table?
+#### 9. What code will produce this table?
+
       <blockquote>
          <q>
          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
@@ -85,11 +89,12 @@
          </footer>
        </blockquote>
 
-   10. What is the correct way to code a link that, when clicked, will send an email to email@example.com with the subject of "Hello"?
+#### 10. What is the correct way to code a link that, when clicked, will send an email to email@example.com with the subject of "Hello"?
 
        - c- <a href="mailto:email@example.com?subject=Hello">Click me</a>
 
-   11. What is the best semantic to use Quotes in HTML?
+#### 11. What is the best semantic to use Quotes in HTML?
+
        <blockquote>
           <p>
            <cite>Steve Kruz</cite>
@@ -98,7 +103,8 @@
           </p>
        </blockquote>
 
-   12. What is the best way to mark up this layout?
+#### 12. What is the best way to mark up this layout?
+
        <div>
           <h3>Mailing Address</h3>
           <address>
@@ -109,28 +115,30 @@
           <a href="mailto:info@linkedin.com">info@linkedin.com</a>
         </div>
 
-   13. What is wrong with this code?
+#### 13. What is wrong with this code?
 
        - h2 element does not belong to the ul element it should be outside
 
-   14. HTML elements that aren't meant to store content or other elements are called \_\_\_\_ elements. [complete]
+#### 14. HTML elements that aren't meant to store content or other elements are called \_\_\_\_ elements. [complete]
+
        - void
 
 ## Question 2: Practical Assignment :
 
-4. [**Implement in html**](https://startbootstrap.com/previews/creative)
-   [code in github](https://github.com/HOS-ELDIN/DEPI-React/tree/main/session-2-html-css)
-   [live preview](https://hos-eldin.github.io/DEPI-React/session-2-html-css/index.html)
+2. - [**Implement in html**](https://startbootstrap.com/previews/creative)
+   - [**code in github**](https://github.com/HOS-ELDIN/DEPI-React/tree/main/session-2-html-css)
+   - [**live preview**](https://hos-eldin.github.io/DEPI-React/session-2-html-css/index.html)
 
 ## Search:
 
-1. Why linking a font using the <link> tag is better than using @import in CSS:
+### 1. Why linking a font using the <link> tag is better than using @import in CSS:
 
 - in link the font will start downloading when reading the html file
 - but in import the font wont start downloading until the css file is downloaded and parsed
 - this will cause the page to either:
-  - load without the desired font untill the download finishes:
-  - delay in loading due to css blocking.
+- load without the desired font untill the download finishes:
+- delay in loading due to css blocking.
 
-2. when to use content box and border-box in box-sizing:
-   - border-box is the more common to preserve layout and responsiveness
+### 2. when to use content box and border-box in box-sizing:
+
+- border-box is the more common to preserve layout and responsiveness
