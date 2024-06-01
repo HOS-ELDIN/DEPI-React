@@ -101,7 +101,7 @@ section.hero {
 			rgba(92, 77, 66, 0.8) 0%,
 			rgba(92, 77, 66, 0.8) 100%
 		),
-		url(/imgs/bg-masthead.jpg);
+		url(../imgs/bg-masthead.jpg);
 	background-position: center;
 	background-size: cover;
 	display: grid;
