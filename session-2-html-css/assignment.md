@@ -2,11 +2,11 @@
 
 ## Html5Exam:
 
-1. Question1 : Answer The Follwoing Questions
+1. Question1 : Answer The Following Questions
 
    1. What is the use of the \<link\> tag?
 
-      - linking an external respurce like (css files, fonts, cdns)
+      - linking an external resource like (css files, fonts, cdns)
 
    2. With which tags is the \<source\> element associated?
 
@@ -27,14 +27,14 @@
 
    5. How do you confirm that a document is written in HTML5?
 
-      - by checking the doctype tag in the very beginning of the file. \<!DOCTYPE html\>
+      - by checking the doctype tag at the very beginning of the file. \<!DOCTYPE html\>
       - find semantic elements tags in the code
 
    6. What does the code shown below accomplish?
 
-      - it will render a differant image depending on screen width (viewport size)
+      - it will render a different image depending on screen width (viewport size)
       - it will render an image from the first source if the width of the screen >= 1000px
-      - it will render an image from the secound source if the width of the screen >= 750px and <a 1000px
+      - it will render an image from the second source if the width of the screen >= 750px and < 1000px
 
    7. What code will produce this table?
       <table>
@@ -122,6 +122,15 @@
    [code in github](https://github.com/HOS-ELDIN/DEPI-React/tree/main/session-2-html-css)
    [live preview](https://hos-eldin.github.io/DEPI-React/session-2-html-css/index.html)
 
-
 ## Search:
-Linking a font using the <link> tag is generally considered better than using @import in CSS
+
+1. Why linking a font using the <link> tag is better than using @import in CSS:
+
+- in link the font will start downloading when reading the html file
+- but in import the font wont start downloading until the css file is downloaded and parsed
+- this will cause the page to either:
+  - load without the desired font untill the download finishes:
+  - delay in loading due to css blocking.
+
+2. when to use content box and border-box in box-sizing:
+   - border-box is the more common to preserve layout and responsiveness
