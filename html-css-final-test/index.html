@@ -3,554 +3,785 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>START BOOTSTRAP</title>
+    <meta name="description" content="Free Web tutorials for HTML and CSS" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Hossam Eldin Hamdy" />
+    <title>ToyStore</title>
+    <!-- open sans google font -->
+    <!-- open sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Varela Round -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style sheet -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
   </head>
-  <body>
-    <header class="fixed inset-x-0 top-0 z-50 bg-sec text-white">
-      <div
-        class="container mx-auto flex items-center justify-between px-4 py-6 font-bold"
-      >
-        <a class="text-[28px]" href="/">START BOOTSTRAP</a>
-        <nav>
+  <body class="bg-body font-open text-darkText">
+    <header class="shadow-header inset-x-0 top-0 z-50 md:fixed">
+      <!-- top bar -->
+      <div class="flex h-8 items-center bg-accent">
+        <div class="container flex items-center justify-between">
+          <div class="flex items-center gap-4 text-[11px] text-white">
+            <p>Call Us: +1 213 974-5898</p>
+            <p class="hidden sm:block">
+              <span>Email:</span>
+              <a href="mailto:toystore@template.com">toystore@template.com</a>
+            </p>
+          </div>
+
+          <!-- social -->
           <ul class="flex items-center justify-center">
+            <!-- twitter -->
             <li>
-              <a
-                class="block p-4 transition hover:text-accent"
-                href="#portfolio"
-                >PORTFOLIO
+              <a href="" class="block size-7 p-[5px]">
+                <img
+                  src="./imgs/icons/twitter-icon-white.svg"
+                  alt="twitter-icon-white"
+                  class="size-[18px]"
+                />
               </a>
             </li>
+
+            <!-- facebook -->
             <li>
-              <a class="block p-4 transition hover:text-accent" href="#about"
-                >ABOUT</a
-              >
+              <a href="" class="block size-7 p-[5px]">
+                <img
+                  src="./imgs/icons/facebook-icon-white.svg"
+                  alt="facebook-icon-white"
+                  class="size-[18px]"
+                />
+              </a>
             </li>
+
+            <!-- instagram -->
             <li>
-              <a class="block p-4 transition hover:text-accent" href="#contact"
-                >CONTACT</a
-              >
+              <a href="" class="block size-7 p-[5px]">
+                <img
+                  src="./imgs/icons/instagram-icon-white.svg"
+                  alt="instagram-icon-white"
+                  class="size-[18px]"
+                />
+              </a>
+            </li>
+
+            <!-- pinterest -->
+            <li>
+              <a href="" class="block size-7 p-[5px]">
+                <img
+                  src="./imgs/icons/pinterest-icon-white.svg"
+                  alt="pinterest-icon-white"
+                  class="size-[18px]"
+                />
+              </a>
+            </li>
+
+            <!-- youtube -->
+            <li>
+              <a href="" class="block size-7 p-[5px]">
+                <img
+                  src="./imgs/icons/youtube-icon.svg"
+                  alt="youtube-icon-white"
+                  class="size-[18px]"
+                />
+              </a>
             </li>
           </ul>
-        </nav>
+        </div>
+      </div>
+
+      <!-- main head -->
+      <div class="bg-white">
+        <div
+          class="container flex items-center justify-between gap-6 pe-0 md:h-[72px] md:pe-4"
+        >
+          <!-- brand and nav -->
+          <div class="flex items-center gap-6">
+            <a href="/" class="pe-[15px] font-varela text-[22px] text-brand"
+              >ToyStore</a
+            >
+            <nav class="hidden md:block">
+              <ul class="flex items-center text-sm">
+                <li>
+                  <a href="/" class="px-[18px] py-3 hover:underline">Catalog</a>
+                </li>
+                <li>
+                  <a href="/" class="px-[18px] py-3 hover:underline"
+                    >Delivery</a
+                  >
+                </li>
+                <li>
+                  <a href="/" class="px-[18px] py-3 hover:underline">About</a>
+                </li>
+                <li>
+                  <a href="/" class="px-[18px] py-3 hover:underline"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- cart  -->
+          <div class="flex items-center">
+            <button class="flex items-center gap-2 px-[15px] py-[9px]">
+              <span class="text-sm"> Cart </span>
+              <img src="./imgs/icons/cart-icon.svg" alt="cart-icon" />
+              <span
+                class="grid size-5 place-content-center rounded-full bg-accent text-xs text-white"
+                >0</span
+              >
+            </button>
+
+            <!-- menu btn -->
+            <button
+              class="h-16 w-[65px] border-s border-border text-xl md:hidden"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+          <!-- mobile menu -->
+        </div>
       </div>
     </header>
 
     <main>
-      <!-- hero ection -->
+      <!-- hero section -->
       <section
-        class="grid min-h-dvh place-content-center bg-primary pb-24 pt-[200px] text-white"
+        class="relative grid place-content-center bg-hero bg-cover bg-[50%_94%] px-4 py-[104px] sm:py-[184px] md:mt-[104px] md:min-h-[80dvh] md:py-0"
       >
-        <div class="container mx-auto px-4 text-center">
-          <!-- avatar -->
-          <div class="mx-auto mb-12 max-w-[240px]">
-            <img src="./imgs/avataaars.svg" alt="avatar svg" class="w-full" />
-          </div>
-
-          <!-- main heading -->
-          <h1 class="text-[64px] font-bold">START BOOTSTRAP</h1>
-
-          <!-- decoration -->
-          <div class="mb-6 mt-5 flex items-center justify-center gap-4">
-            <div class="h-1 w-full max-w-28 rounded-full bg-white"></div>
-            <div class="flex h-12 w-9 items-center justify-center">
-              <svg
-                class=""
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fas"
-                data-icon="star"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 576 512"
-                data-fa-i2svg=""
-              >
-                <path
-                  fill="currentColor"
-                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
-                ></path>
-              </svg>
-            </div>
-            <div class="h-1 w-full max-w-28 rounded-full bg-white"></div>
-          </div>
-
-          <!-- desc -->
-          <p class="text-2xl">Graphic Artist - Web Designer - Illustrator</p>
-        </div>
-      </section>
-
-      <!-- portfolio section -->
-      <section class="py-24" id="portfolio">
-        <div class="px-s container mx-auto">
-          <h2 class="text-center text-5xl font-bold text-sec">PORTFOLIO</h2>
-
-          <!-- decoration -->
-          <div class="mb-6 mt-5 flex items-center justify-center gap-4">
-            <div class="h-1 w-full max-w-28 rounded-full bg-sec"></div>
-            <div class="flex h-12 w-9 items-center justify-center text-sec">
-              <svg
-                class=""
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fas"
-                data-icon="star"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 576 512"
-                data-fa-i2svg=""
-              >
-                <path
-                  fill="currentColor"
-                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
-                ></path>
-              </svg>
-            </div>
-            <div class="h-1 w-full max-w-28 rounded-full bg-sec"></div>
-          </div>
-
-          <!-- imgs container -->
-          <div
-            class="grid grid-cols-[repeat(auto-fill,_minmax(356px,_1fr))] gap-x-6 gap-y-12"
-          >
-            <!-- 1 -->
-            <div class="group relative overflow-hidden rounded-lg">
-              <img src="./imgs/portfolio/cabin.png" alt="" />
-              <div
-                class="absolute inset-0 grid place-content-center transition group-hover:bg-[rgba(26,_188,_156,_0.9)]"
-              >
-                <svg
-                  class="size-16 text-white opacity-0 transition group-hover:opacity-100"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="plus"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  data-fa-i2svg=""
-                >
-                  <path
-                    fill="currentColor"
-                    d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-
-            <!-- 2 -->
-            <div class="group relative overflow-hidden rounded-lg">
-              <img src="./imgs/portfolio/cake.png" alt="" />
-              <div
-                class="absolute inset-0 grid place-content-center transition group-hover:bg-[rgba(26,_188,_156,_0.9)]"
-              >
-                <svg
-                  class="size-16 text-white opacity-0 transition group-hover:opacity-100"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="plus"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  data-fa-i2svg=""
-                >
-                  <path
-                    fill="currentColor"
-                    d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-
-            <!-- 3 -->
-            <div class="group relative overflow-hidden rounded-lg">
-              <img src="./imgs/portfolio/circus.png" alt="" />
-              <div
-                class="absolute inset-0 grid place-content-center transition group-hover:bg-[rgba(26,_188,_156,_0.9)]"
-              >
-                <svg
-                  class="size-16 text-white opacity-0 transition group-hover:opacity-100"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="plus"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  data-fa-i2svg=""
-                >
-                  <path
-                    fill="currentColor"
-                    d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-
-            <!-- 4 -->
-            <div class="group relative overflow-hidden rounded-lg">
-              <img src="./imgs/portfolio/game.png" alt="" />
-              <div
-                class="absolute inset-0 grid place-content-center transition group-hover:bg-[rgba(26,_188,_156,_0.9)]"
-              >
-                <svg
-                  class="size-16 text-white opacity-0 transition group-hover:opacity-100"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="plus"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  data-fa-i2svg=""
-                >
-                  <path
-                    fill="currentColor"
-                    d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-
-            <!-- 5 -->
-            <div class="group relative overflow-hidden rounded-lg">
-              <img src="./imgs/portfolio/safe.png" alt="" />
-              <div
-                class="absolute inset-0 grid place-content-center transition group-hover:bg-[rgba(26,_188,_156,_0.9)]"
-              >
-                <svg
-                  class="size-16 text-white opacity-0 transition group-hover:opacity-100"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="plus"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  data-fa-i2svg=""
-                >
-                  <path
-                    fill="currentColor"
-                    d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-
-            <!-- 6 -->
-            <div class="group relative overflow-hidden rounded-lg">
-              <img src="./imgs/portfolio/submarine.png" alt="" />
-              <div
-                class="absolute inset-0 grid place-content-center transition group-hover:bg-[rgba(26,_188,_156,_0.9)]"
-              >
-                <svg
-                  class="size-16 text-white opacity-0 transition group-hover:opacity-100"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="plus"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  data-fa-i2svg=""
-                >
-                  <path
-                    fill="currentColor"
-                    d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- about Section -->
-      <section class="bg-accent py-24 text-white" id="about">
-        <div class="container mx-auto px-4">
-          <h2 class="text-center text-5xl font-bold">ABOUT</h2>
-
-          <!-- decoration -->
-          <div class="mb-6 mt-5 flex items-center justify-center gap-4">
-            <div class="h-1 w-full max-w-28 rounded-full bg-white"></div>
-            <div class="flex h-12 w-9 items-center justify-center text-white">
-              <svg
-                class=""
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fas"
-                data-icon="star"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 576 512"
-                data-fa-i2svg=""
-              >
-                <path
-                  fill="currentColor"
-                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
-                ></path>
-              </svg>
-            </div>
-            <div class="h-1 w-full max-w-28 rounded-full bg-white"></div>
-          </div>
-
-          <!-- text container -->
-          <div
-            class="mb- mx-auto mb-6 flex max-w-[736px] justify-center gap-6 text-xl"
-          >
-            <p class="mb-4 flex-1">
-              Freelancer is a free bootstrap theme created by Start Bootstrap.
-              The download includes the complete source files including HTML,
-              CSS, and JavaScript as well as optional SASS stylesheets for easy
-              customization.
-            </p>
-
-            <p class="mb-4 flex-1">
-              You can create your own custom avatar for the masthead, change the
-              icon in the dividers, and add your email address to the contact
-              form to make it fully functional!
-            </p>
-          </div>
-
-          <!-- download btn -->
-          <a
-            class="mx-auto flex w-fit items-center justify-center gap-2 whitespace-nowrap rounded-lg border-2 border-white px-7 py-4 text-xl transition hover:bg-white hover:text-black"
-            href="/"
-          >
-            <svg
-              class="size-5"
-              aria-hidden="true"
-              focusable="false"
-              data-prefix="fas"
-              data-icon="download"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              data-fa-i2svg=""
-            >
-              <path
-                fill="currentColor"
-                d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"
-              ></path>
-            </svg>
-
-            Free Download!
-          </a>
-        </div>
-      </section>
-
-      <!-- contact section -->
-      <section class="py-24" id="contact">
-        <div class="px-s container mx-auto">
-          <h2 class="text-center text-5xl font-bold text-sec">CONTACT ME</h2>
-
-          <!-- decoration -->
-          <div class="mb-6 mt-5 flex items-center justify-center gap-4">
-            <div class="h-1 w-full max-w-28 rounded-full bg-sec"></div>
-            <div class="flex h-12 w-9 items-center justify-center text-sec">
-              <svg
-                class=""
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fas"
-                data-icon="star"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 576 512"
-                data-fa-i2svg=""
-              >
-                <path
-                  fill="currentColor"
-                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
-                ></path>
-              </svg>
-            </div>
-            <div class="h-1 w-full max-w-28 rounded-full bg-sec"></div>
-          </div>
-
-          <!-- contact form -->
-          <form class="mx-auto flex max-w-[641px] flex-col gap-4">
-            <div class="relative">
-              <input class="peer" type="text" name="name" id="name" required />
-              <label
-                class="peer-focus:scale-60 absolute left-0 top-0 w-full py-6 text-2xl text-[#6c757d] peer-focus:-translate-y-7 peer-focus:text-base peer-focus:opacity-80"
-                for="name"
-                >Full name</label
-              >
-            </div>
-
-            <div>
-              <input class="peer" type="text" name="mail" id="mail" required />
-              <label
-                class="peer-focus:scale-60 absolute left-0 top-0 w-full py-6 text-2xl text-[#6c757d] peer-focus:-translate-y-7 peer-focus:text-base peer-focus:opacity-80"
-                for="mail"
-                >Email address</label
-              >
-            </div>
-
-            <div>
-              <input
-                class="peer"
-                type="text"
-                name="phone"
-                id="phone"
-                required
-              />
-              <label
-                class="peer-focus:scale-60 absolute left-0 top-0 w-full py-6 text-2xl text-[#6c757d] peer-focus:-translate-y-7 peer-focus:text-base peer-focus:opacity-80"
-                for="phone"
-                >Phone number</label
-              >
-            </div>
-
-            <div>
-              <textarea
-                class="peer"
-                name="message"
-                id="message"
-                required
-              ></textarea>
-              <label
-                class="peer-focus:scale-60 absolute left-0 top-0 w-full py-6 text-2xl text-[#6c757d] peer-focus:-translate-y-7 peer-focus:text-base peer-focus:opacity-80"
-                for="message"
-                >Message</label
-              >
-            </div>
-
-            <button
-              class="w-fit rounded-lg bg-accent px-7 py-4 text-xl text-white"
-              type="submit"
-            >
-              Send
-            </button>
-          </form>
-        </div>
-      </section>
-
-      <!-- footer -->
-      <footer class="bg-sec text-white">
         <div
-          class="container mx-auto grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] px-4 py-20 text-center"
+          class="w-full max-w-[480px] rounded-2xl bg-white px-10 py-10 text-center md:max-w-[570px] md:px-12 md:py-14"
         >
-          <div>
-            <h3 class="mb-6 text-2xl font-bold">LOCATION</h3>
-            <address class="text-xl not-italic">
-              2215 John Daniel Drive
-              <br />
-              Clark, MO 65243
-            </address>
+          <p class="mb-4 text-[13px] font-semibold leading-4 text-accent">
+            Say Hello to ToyStore!
+          </p>
+          <h1
+            class="mb-5 font-varela text-[32px] leading-[48px] md:text-[40px]"
+          >
+            Free Ecommerce Template for Webflow
+          </h1>
+          <a
+            href="/"
+            class="hover:shadow-accent-btn-hover mx-auto block w-fit rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-white transition duration-300 ease-in-out hover:scale-105"
+            >Open Catalog</a
+          >
+        </div>
+
+        <a
+          href="#category"
+          class="absolute -bottom-8 right-1/2 hidden size-16 translate-x-1/2 place-content-center rounded-full bg-white shadow-scroll-btn md:grid"
+        >
+          <div
+            class="flex h-[30px] w-5 justify-center rounded-full border-2 border-[#bbb]"
+          >
+            <div
+              class="mt-1.5 size-1 animate-scroll rounded-full bg-[#bbb]"
+            ></div>
           </div>
+        </a>
+      </section>
 
-          <div>
-            <h3 class="mb-6 text-2xl font-bold">AROUND THE WEB</h3>
-            <div class="flex items-center justify-center gap-2">
-              <!-- facebook -->
-              <a
-                class="grid size-[52px] place-content-center rounded-full border-2 border-white transition hover:bg-white hover:text-sec"
-                href="/"
+      <!-- category section -->
+      <section class="py-16 md:py-[120px]" id="category">
+        <div
+          class="container flex flex-col items-center justify-center gap-16 px-[15px] pt-8 lg:flex-row lg:gap-[30px]"
+        >
+          <div
+            class="relative flex w-full max-w-[480px] flex-1 flex-col rounded-2xl bg-orange px-8 py-10 sm:flex-row lg:max-w-[570px] lg:px-10 lg:py-12"
+          >
+            <img
+              src="./imgs/stuffed/stuffed-toy-1.png"
+              alt=""
+              class="bottom-[26px] left-[15px] mx-auto -mt-24 size-[176px] sm:absolute lg:size-[220px]"
+            />
+            <div class="sm:ms-[176px] lg:ms-[224px]">
+              <h2
+                class="mb-4 text-center font-varela text-2xl leading-9 text-white sm:text-start lg:text-[28px]"
               >
-                <svg
-                  class="h-5 w-6"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fab"
-                  data-icon="facebook-f"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 320 512"
-                  data-fa-i2svg=""
-                >
-                  <path
-                    fill="currentColor"
-                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
-                  ></path>
-                </svg>
-              </a>
-              <!-- twitter -->
-              <a
-                class="grid size-[52px] place-content-center rounded-full border-2 border-white transition hover:bg-white hover:text-sec"
-                href="/"
-              >
-                <svg
-                  class="h-5 w-6"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fab"
-                  data-icon="twitter"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  data-fa-i2svg=""
-                >
-                  <path
-                    fill="currentColor"
-                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
-                  ></path>
-                </svg>
-              </a>
+                Stuffed Animals
+              </h2>
 
-              <!-- linked in -->
               <a
-                class="grid size-[52px] place-content-center rounded-full border-2 border-white transition hover:bg-white hover:text-sec"
                 href="/"
+                class="hover:shadow-white-btn-hover mx-auto block w-fit whitespace-nowrap rounded-full bg-white px-6 py-2 text-[13px] font-semibold leading-6 transition hover:scale-105 sm:mx-0"
+                >Shop Now</a
               >
-                <svg
-                  class="h-5 w-6"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fab"
-                  data-icon="linkedin-in"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  data-fa-i2svg=""
-                >
-                  <path
-                    fill="currentColor"
-                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
-                  ></path>
-                </svg>
-              </a>
-
-              <!-- dribble-->
-              <a
-                class="grid size-[52px] place-content-center rounded-full border-2 border-white transition hover:bg-white hover:text-sec"
-                href="/"
-              >
-                <svg
-                  class="h-5 w-6"
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fab"
-                  data-icon="dribbble"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  data-fa-i2svg=""
-                >
-                  <path
-                    fill="currentColor"
-                    d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z"
-                  ></path>
-                </svg>
-              </a>
             </div>
           </div>
 
-          <div>
-            <h3 class="mb-6 text-2xl font-bold">ABOUT FREELANCER</h3>
-            <p class="mx-auto max-w-[356px] text-xl">
-              Freelance is a free to use, MIT licensed Bootstrap theme created
-              by
+          <div
+            class="relative flex w-full max-w-[480px] flex-1 flex-col justify-center rounded-2xl bg-pink px-8 py-10 sm:flex-row sm:justify-end lg:max-w-[570px] lg:px-10 lg:py-12"
+          >
+            <img
+              src="./imgs/wood/wood-toy-2.png"
+              alt=""
+              class="bottom-[26px] right-[15px] mx-auto -mt-24 size-[176px] sm:absolute lg:size-[220px]"
+            />
+            <div class="sm:me-[176px] lg:me-[224px]">
+              <h2
+                class="mb-4 text-center font-varela text-2xl leading-9 text-white sm:text-end lg:text-[28px]"
+              >
+                Wooden Toys
+              </h2>
 
-              <a href="/" class="text-[#1abc9c] underline">Start Bootstrap</a> .
-            </p>
+              <a
+                href="/"
+                class="hover:shadow-white-btn-hover me-auto ms-auto block w-fit whitespace-nowrap rounded-full bg-white px-6 py-2 text-[13px] font-semibold leading-6 transition hover:scale-105 sm:me-0"
+                >Shop Now</a
+              >
+            </div>
           </div>
         </div>
-        <div class="bg-[#1a252f] px-4 py-6 text-center text-sm">
-          Copyright &copy; Your Website <span>2023</span>
+      </section>
+
+      <!-- staffed animals -->
+      <section class="pb-16 md:pb-[120px]">
+        <div class="container">
+          <!-- section heading -->
+          <div class="flex items-center justify-between">
+            <h2 class="font-varela text-[22px] md:text-[24px] lg:text-[28px]">
+              Stuffed Animals
+            </h2>
+            <a
+              href="/"
+              class="flex w-fit items-center gap-2 border-b-2 border-border py-0.5 text-[13px] font-semibold transition hover:border-accent"
+            >
+              <span>See All Toys </span>
+              <img
+                src="./imgs//icons//arrow-right-mini-icon.svg"
+                alt="arrow-right-mini-icon"
+                class="w-2.5"
+              />
+            </a>
+          </div>
+          <!-- heading decore -->
+          <div class="relative mb-10 mt-8 h-0.5 bg-border">
+            <span class="absolute start-0 h-full w-[136px] bg-accent"></span>
+          </div>
+
+          <!-- cards container -->
+          <div
+            class="grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] items-center justify-center gap-[30px] py-[15px]"
+          >
+            <!-- card one -->
+            <div
+              class="hover:shadow-card-hover flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105"
+            >
+              <div class="mb-4 p-5">
+                <img src="./imgs/stuffed/stuffed-toy-1.png" alt="staffed toy" />
+              </div>
+              <h3 class="mb-3 font-varela text-[15px] leading-5">Teddy Bear</h3>
+
+              <p class="rounded-full bg-accent px-3 py-1 text-xs text-white">
+                $&nbsp;30.00&nbsp;USD
+              </p>
+            </div>
+
+            <!-- card two -->
+            <div
+              class="hover:shadow-card-hover flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105"
+            >
+              <div class="mb-4 p-5">
+                <img src="./imgs/stuffed/stuffed-toy-2.png" alt="staffed toy" />
+              </div>
+              <h3 class="mb-3 font-varela text-[15px] leading-5">
+                Mega Plush Toy
+              </h3>
+
+              <p class="rounded-full bg-accent px-3 py-1 text-xs text-white">
+                $&nbsp;38.00&nbsp;USD
+              </p>
+            </div>
+
+            <!-- card three -->
+            <div
+              class="hover:shadow-card-hover flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105"
+            >
+              <div class="mb-4 p-5">
+                <img src="./imgs/stuffed/stuffed-toy-3.png" alt="staffed toy" />
+              </div>
+              <h3 class="mb-3 font-varela text-[15px] leading-5">Cute Dog</h3>
+
+              <p class="rounded-full bg-accent px-3 py-1 text-xs text-white">
+                $&nbsp;24.00&nbsp;USD
+              </p>
+            </div>
+
+            <!-- card four -->
+            <div
+              class="hover:shadow-card-hover flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105"
+            >
+              <div class="mb-4 p-5">
+                <img src="./imgs/stuffed/stuffed-toy-4.png" alt="staffed toy" />
+              </div>
+              <h3 class="mb-3 font-varela text-[15px] leading-5">
+                Little Friend
+              </h3>
+
+              <p class="rounded-full bg-accent px-3 py-1 text-xs text-white">
+                $&nbsp;27.00&nbsp;USD
+              </p>
+            </div>
+          </div>
         </div>
-      </footer>
+      </section>
+
+      <!-- Wooden Toys -->
+      <section class="pb-16 md:pb-[120px]">
+        <div class="container">
+          <!-- section heading -->
+          <div class="flex items-center justify-between">
+            <h2 class="font-varela text-[22px] md:text-[24px] lg:text-[28px]">
+              Wooden Toys
+            </h2>
+            <a
+              href="/"
+              class="flex w-fit items-center gap-2 border-b-2 border-border py-0.5 text-[13px] font-semibold transition hover:border-accent"
+            >
+              <span>See All Toys </span>
+              <img
+                src="./imgs//icons//arrow-right-mini-icon.svg"
+                alt="arrow-right-mini-icon"
+                class="w-2.5"
+              />
+            </a>
+          </div>
+          <!-- heading decore -->
+          <div class="relative mb-10 mt-8 h-0.5 bg-border">
+            <span class="absolute start-0 h-full w-[136px] bg-accent"></span>
+          </div>
+
+          <!-- cards container -->
+          <div
+            class="grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] items-center justify-center gap-[30px] py-[15px]"
+          >
+            <!-- card one -->
+            <div
+              class="hover:shadow-card-hover flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105"
+            >
+              <div class="mb-4 p-5">
+                <img src="./imgs/wood/wood-toy-2.png" alt="wood toy" />
+              </div>
+              <h3 class="mb-3 font-varela text-[15px] leading-5">
+                Happy Flower
+              </h3>
+
+              <p class="rounded-full bg-accent px-3 py-1 text-xs text-white">
+                $&nbsp;38.00&nbsp;USD
+              </p>
+            </div>
+
+            <!-- card two -->
+            <div
+              class="hover:shadow-card-hover flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105"
+            >
+              <div class="mb-4 p-5">
+                <img src="./imgs/wood/wood-toy-3.png" alt="wood toy" />
+              </div>
+              <h3 class="mb-3 font-varela text-[15px] leading-5">
+                Lift Machine
+              </h3>
+
+              <p class="rounded-full bg-accent px-3 py-1 text-xs text-white">
+                $&nbsp;24.00&nbsp;USD
+              </p>
+            </div>
+
+            <!-- card three -->
+            <div
+              class="hover:shadow-card-hover flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105"
+            >
+              <div class="mb-4 p-5">
+                <img src="./imgs/wood/wood-toy-4.png" alt="wood toy" />
+              </div>
+              <h3 class="mb-3 font-varela text-[15px] leading-5">
+                Wooden Camera
+              </h3>
+
+              <p class="rounded-full bg-accent px-3 py-1 text-xs text-white">
+                $&nbsp;32.00&nbsp;USD
+              </p>
+            </div>
+
+            <!-- card four -->
+            <div
+              class="hover:shadow-card-hover flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105"
+            >
+              <div class="mb-4 p-5">
+                <img src="./imgs/wood/wood-toy-1.png" alt="wood toy" />
+              </div>
+              <h3 class="mb-3 font-varela text-[15px] leading-5">
+                Little Rabbit
+              </h3>
+
+              <p class="rounded-full bg-accent px-3 py-1 text-xs text-white">
+                $&nbsp;16.00&nbsp;USD
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about video section -->
+      <section
+        class="bg-[0px_0px,_50%_50% bg-about bg-cover bg-fixed bg-center px-7 pb-28 pt-16 text-center md:pt-[120px]"
+      >
+        <div class="container grid place-content-center text-white">
+          <p class="mb-4 text-[13px] font-semibold leading-4">About The Shop</p>
+          <h2 class="mb-4 font-varela text-4xl leading-[44px]">
+            Watch Our Story
+          </h2>
+          <p class="mb-7 max-w-[770px] text-sm leading-6">
+            There is no magic formula to write perfect ad copy. It is based on a
+            number of factors, including ad placement, demographic, even the
+            consumer’s mood.
+          </p>
+          <button
+            class="mx-auto grid size-16 place-content-center rounded-full bg-accent transition duration-300 hover:scale-105"
+          >
+            <img src="./imgs/icons/play-icon-white.svg" alt="" class="size-6" />
+          </button>
+        </div>
+      </section>
+
+      <!-- about two col section -->
+      <section class="py-16 md:py-[120px]">
+        <div class="container">
+          <p
+            class="mb-4 text-center text-[13px] font-semibold leading-4 text-accent"
+          >
+            Made for Webflow
+          </p>
+
+          <h2
+            class="text-center font-varela text-[28px] leading-10 md:text-[32px]"
+          >
+            Simple & Colorful Ecommerce
+            <br />Template for Your Business
+          </h2>
+
+          <!-- two col -->
+          <div
+            class="mt-20 flex flex-col-reverse items-center justify-between gap-8 md:flex-row"
+          >
+            <!-- left col -->
+            <div class="flex-1">
+              <h3
+                class="text-center font-varela text-[28px] leading-10 md:text-start md:text-[32px]"
+              >
+                Available for FREE!
+              </h3>
+              <hr
+                class="mx-auto my-6 max-w-[70px] border-t-2 border-accent md:mx-0"
+              />
+              <p
+                class="mb-7 max-w-[470px] text-center text-sm leading-6 text-gray md:text-start"
+              >
+                A successful marketing plan relies heavily on the pulling-power
+                of advertising copy. Writing result-oriented ad copy is
+                difficult, as it must appeal to, entice, and convince consumers
+                to take action. There is no magic formula to write perfect ad
+                copy
+              </p>
+              <a
+                class="hover:shadow-accent-btn-hover mx-auto block w-fit rounded-full bg-accent px-7 py-3 text-sm font-semibold leading-6 text-white transition duration-300 hover:scale-105 md:mx-0"
+                href="/"
+                >GET IT NOW!</a
+              >
+            </div>
+
+            <!-- right col -->
+            <div class="flex-1 px-4">
+              <img src="./imgs/side.jpeg" alt="two boys" class="rounded-2xl" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- cta section -->
+      <section>
+        <div class="container sm:px-20 lg:px-0">
+          <div
+            class="flex flex-col items-center justify-between gap-12 rounded-2xl bg-white px-8 py-10 shadow-scroll-btn sm:p-12 lg:flex-row"
+          >
+            <!-- left info -->
+            <div
+              class="flex flex-1 flex-col items-center gap-6 text-center lg:flex-row lg:text-start"
+            >
+              <div
+                class="grid size-16 place-content-center rounded-full bg-accent"
+              >
+                <img
+                  src="./imgs/icons/paperplane-icon-white.svg"
+                  alt="paperplane-icon-white"
+                  class="size-8"
+                />
+              </div>
+              <h3 class="font-varela text-xl leading-8 sm:text-2xl">
+                Subscribe to our newsletter <br />
+                & get <span class="text-accent">10% discount!</span>
+              </h3>
+            </div>
+            <!-- right inputs -->
+            <form
+              class="flex w-full flex-1 flex-col items-center gap-5 lg:flex-row lg:gap-4"
+            >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email address"
+                class="w-full flex-1 rounded-full border-2 border-border bg-body px-7 py-2.5 outline-none hover:bg-white focus:border-accent focus:bg-white lg:w-auto"
+              />
+              <button
+                type="submit"
+                class="hover:shadow-accent-btn-hover w-full rounded-full bg-accent px-7 py-3 text-sm font-semibold leading-6 text-white transition duration-300 hover:scale-105 lg:w-fit"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- insta section -->
+      <section class="py-16 md:py-[120px]">
+        <div class="container">
+          <p
+            class="mb-4 text-center text-[13px] font-semibold leading-4 text-accent"
+          >
+            @ElasticThemes
+          </p>
+
+          <h2
+            class="text-center font-varela text-[28px] leading-10 md:text-[32px]"
+          >
+            We're on Instagram!
+          </h2>
+
+          <!-- gallery -->
+          <div
+            class="mb-[72px] mt-20 grid grid-cols-3 gap-2 md:gap-4 lg:grid-cols-6"
+          >
+            <a
+              href="/"
+              class="hover:shadow-card-hover overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105"
+            >
+              <img
+                src="./imgs/insta/insta-6.jpg "
+                alt="instagram image post"
+                class="w-full"
+              />
+            </a>
+            <a
+              href="/"
+              class="hover:shadow-card-hover overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105"
+            >
+              <img
+                src="./imgs/insta/insta-4.jpg "
+                alt="instagram image post"
+                class="w-full"
+              />
+            </a>
+            <a
+              href="/"
+              class="hover:shadow-card-hover overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105"
+            >
+              <img
+                src="./imgs/insta/insta-3.jpg "
+                alt="instagram image post"
+                class="w-full"
+              />
+            </a>
+            <a
+              href="/"
+              class="hover:shadow-card-hover overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105"
+            >
+              <img
+                src="./imgs/insta/insta-2.jpg "
+                alt="instagram image post"
+                class="w-full"
+              />
+            </a>
+            <a
+              href="/"
+              class="hover:shadow-card-hover overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105"
+            >
+              <img
+                src="./imgs/insta/insta-1.jpg "
+                alt="instagram image post"
+                class="w-full"
+              />
+            </a>
+            <a
+              href="/"
+              class="hover:shadow-card-hover overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105"
+            >
+              <img
+                src="./imgs/insta/insta-5.jpg "
+                alt="instagram image post"
+                class="w-full"
+              />
+            </a>
+          </div>
+
+          <a
+            class="hover:shadow-accent-btn-hover mx-auto block w-fit rounded-full bg-accent px-7 py-3 text-sm font-semibold leading-6 text-white transition duration-300 hover:scale-105"
+            href="/"
+            >See More Photos</a
+          >
+        </div>
+      </section>
     </main>
+
+    <footer class="bg-accent pt-8 text-white lg:pt-12">
+      <div class="container">
+        <div
+          class="flex flex-col justify-between gap-4 md:flex-row lg:items-center"
+        >
+          <!-- brand -->
+          <a href="/" class="font-varela text-[22px] leading-8"> ToyStore </a>
+
+          <!-- navigation -->
+          <nav class="flex items-center">
+            <ul
+              class="flex items-center gap-1.5 text-xs leading-5 sm:text-sm md:gap-3"
+            >
+              <li>
+                <a href="/" class="px-2 py-1 leading-6 hover:underline">Home</a>
+              </li>
+              <li>
+                <a href="/" class="px-2 py-1 leading-6 hover:underline"
+                  >Catalog</a
+                >
+              </li>
+              <li>
+                <a href="/" class="px-2 py-1 leading-6 hover:underline"
+                  >Delivery</a
+                >
+              </li>
+              <li>
+                <a href="/" class="px-2 py-1 leading-6 hover:underline"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="/" class="px-2 py-1 leading-6 hover:underline"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- social -->
+          <ul class="flex items-center">
+            <!-- twitter -->
+            <li>
+              <a
+                href=""
+                class="grid size-8 place-content-center rounded-full transition duration-300 hover:bg-black/[0.08]"
+              >
+                <img
+                  src="./imgs/icons/twitter-icon-white.svg"
+                  alt="twitter-icon-white"
+                  class="size-5"
+                />
+              </a>
+            </li>
+
+            <!-- facebook -->
+            <li>
+              <a
+                href=""
+                class="grid size-8 place-content-center rounded-full transition duration-300 hover:bg-black/[0.08]"
+              >
+                <img
+                  src="./imgs/icons/facebook-icon-white.svg"
+                  alt="facebook-icon-white"
+                  class="size-5"
+                />
+              </a>
+            </li>
+
+            <!-- instagram -->
+            <li>
+              <a
+                href=""
+                class="grid size-8 place-content-center rounded-full transition duration-300 hover:bg-black/[0.08]"
+              >
+                <img
+                  src="./imgs/icons/instagram-icon-white.svg"
+                  alt="instagram-icon-white"
+                  class="size-5"
+                />
+              </a>
+            </li>
+
+            <!-- pinterest -->
+            <li>
+              <a
+                href=""
+                class="grid size-8 place-content-center rounded-full transition duration-300 hover:bg-black/[0.08]"
+              >
+                <img
+                  src="./imgs/icons/pinterest-icon-white.svg"
+                  alt="pinterest-icon-white"
+                  class="size-5"
+                />
+              </a>
+            </li>
+
+            <!-- youtube -->
+            <li>
+              <a
+                href=""
+                class="grid size-8 place-content-center rounded-full transition duration-300 hover:bg-black/[0.08]"
+              >
+                <img
+                  src="./imgs/icons/youtube-icon.svg"
+                  alt="youtube-icon-white"
+                  class="size-5"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- bottom section -->
+        <div
+          class="mt-8 flex flex-col justify-between gap-1.5 border-t border-white/20 py-3 lg:mt-12 md:flex-row lg:items-center lg:py-8"
+        >
+          <p class="pt-1.5 text-[11px] lg:pt-0">
+            Created with love by
+            <a href="/" class="underline">Elastic Themes</a>
+          </p>
+
+          <ul class="flex items-center gap-2 text-[11px]">
+            <li>
+              Powered by
+              <a href="/" class="underline">Webflow</a>
+            </li>
+            <li class="size-[3px] rounded-full bg-white/50"></li>
+            <li>
+              <a href="/" class="underline">Style Guide</a>
+            </li>
+            <li class="size-[3px] rounded-full bg-white/50"></li>
+            <li>
+              <a href="/" class="underline">Licensing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

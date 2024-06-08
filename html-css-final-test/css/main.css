@@ -1,12 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer components {
+
+.test {
+  animation: 1.2s infinite sscrol ease-in-out;
 }
-form > div {
-  @apply relative flex flex-col;
-}
-form input,
-form textarea {
-  @apply w-full border-b py-6 text-2xl text-[#212529] outline-none;
+
+@keyframes sscrol {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(12px);
+  }
 }
