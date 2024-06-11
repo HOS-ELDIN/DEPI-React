@@ -2,21 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.test {
-  animation: 1.2s infinite sscrol ease-in-out;
-}
-
-@keyframes sscrol {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  20% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(12px);
-  }
+.animation-target {
+  @apply opacity-0;
 }

@@ -27,7 +27,7 @@ module.exports = {
         varela: ["Varela Round", "sans-serif"],
       },
       boxShadow: {
-        "header": "1px 1px 15px 0 rgba(0, 0, 0, 0.12)",
+        header: "1px 1px 15px 0 rgba(0, 0, 0, 0.12)",
         "accent-btn-hover": "0 8px 8px -4px rgba(165, 201, 38, 0.5)",
         "white-btn-hover": "0 8px 8px -4px rgba(17, 17, 17, 0.2)",
         "scroll-btn": "0 1px 2px 0 rgba(0, 0, 0, 0.15)",
@@ -35,12 +35,17 @@ module.exports = {
       },
       animation: {
         scroll: "scrolling 1.2s infinite ease-in-out",
+        fadeIn: "fade_in 1.2s  ease-in-out forwards",
       },
       keyframes: {
         scrolling: {
           "0%": { opacity: 1, transform: "translateY(0)" },
           "20%": { opacity: 1, transform: "translateY(0)" },
           "100%": { opacity: 0, transform: "translateY(12px)" },
+        },
+        fade_in: {
+          "0%": { opacity: 0, transform: "scale(0)" },
+          "100%": { opacity: 1, transform: "scale(1)" },
         },
       },
     },

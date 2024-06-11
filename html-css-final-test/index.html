@@ -28,7 +28,7 @@
     />
   </head>
   <body class="bg-body font-open text-darkText">
-    <header class="shadow-header inset-x-0 top-0 z-50 md:fixed">
+    <header class="inset-x-0 top-0 z-50 shadow-header md:fixed">
       <!-- top bar -->
       <div class="flex h-8 items-center bg-accent">
         <div class="container flex items-center justify-between">
@@ -161,7 +161,7 @@
         class="relative grid place-content-center bg-hero bg-cover bg-[50%_94%] px-4 py-[104px] sm:py-[184px] md:mt-[104px] md:min-h-[80dvh] md:py-0"
       >
         <div
-          class="w-full max-w-[480px] rounded-2xl bg-white px-10 py-10 text-center md:max-w-[570px] md:px-12 md:py-14"
+          class="w-full max-w-[480px] rounded-2xl bg-white px-10 py-10 text-center md:max-w-[570px] md:px-12 md:py-14 animate-fadeIn "
         >
           <p class="mb-4 text-[13px] font-semibold leading-4 text-accent">
             Say Hello to ToyStore!
@@ -173,7 +173,7 @@
           </h1>
           <a
             href="/"
-            class="hover:shadow-accent-btn-hover mx-auto block w-fit rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-white transition duration-300 ease-in-out hover:scale-105"
+            class="mx-auto block w-fit rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-white transition duration-300 ease-in-out hover:scale-105 hover:shadow-accent-btn-hover"
             >Open Catalog</a
           >
         </div>
@@ -198,7 +198,7 @@
           class="container flex flex-col items-center justify-center gap-16 px-[15px] pt-8 lg:flex-row lg:gap-[30px]"
         >
           <div
-            class="relative flex w-full max-w-[480px] flex-1 flex-col rounded-2xl bg-orange px-8 py-10 sm:flex-row lg:max-w-[570px] lg:px-10 lg:py-12"
+            class="relative flex w-full max-w-[480px] flex-1 flex-col rounded-2xl bg-orange px-8 py-10 sm:flex-row lg:max-w-[570px] lg:px-10 lg:py-12 animation-target"
           >
             <img
               src="./imgs/stuffed/stuffed-toy-1.png"
@@ -214,14 +214,14 @@
 
               <a
                 href="/"
-                class="hover:shadow-white-btn-hover mx-auto block w-fit whitespace-nowrap rounded-full bg-white px-6 py-2 text-[13px] font-semibold leading-6 transition hover:scale-105 sm:mx-0"
+                class="mx-auto block w-fit whitespace-nowrap rounded-full bg-white px-6 py-2 text-[13px] font-semibold leading-6 transition hover:scale-105 hover:shadow-white-btn-hover sm:mx-0"
                 >Shop Now</a
               >
             </div>
           </div>
 
           <div
-            class="relative flex w-full max-w-[480px] flex-1 flex-col justify-center rounded-2xl bg-pink px-8 py-10 sm:flex-row sm:justify-end lg:max-w-[570px] lg:px-10 lg:py-12"
+            class="relative flex w-full max-w-[480px] flex-1 flex-col justify-center rounded-2xl bg-pink px-8 py-10 sm:flex-row sm:justify-end lg:max-w-[570px] lg:px-10 lg:py-12 animation-target"
           >
             <img
               src="./imgs/wood/wood-toy-2.png"
@@ -237,7 +237,7 @@
 
               <a
                 href="/"
-                class="hover:shadow-white-btn-hover me-auto ms-auto block w-fit whitespace-nowrap rounded-full bg-white px-6 py-2 text-[13px] font-semibold leading-6 transition hover:scale-105 sm:me-0"
+                class="me-auto ms-auto block w-fit whitespace-nowrap rounded-full bg-white px-6 py-2 text-[13px] font-semibold leading-6 transition hover:scale-105 hover:shadow-white-btn-hover sm:me-0"
                 >Shop Now</a
               >
             </div>
@@ -276,7 +276,7 @@
           >
             <!-- card one -->
             <div
-              class="hover:shadow-card-hover flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105"
+              class="flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105 hover:shadow-card-hover animation-target"
             >
               <div class="mb-4 p-5">
                 <img src="./imgs/stuffed/stuffed-toy-1.png" alt="staffed toy" />
@@ -290,7 +290,7 @@
 
             <!-- card two -->
             <div
-              class="hover:shadow-card-hover flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105"
+              class="flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105 hover:shadow-card-hover animation-target"
             >
               <div class="mb-4 p-5">
                 <img src="./imgs/stuffed/stuffed-toy-2.png" alt="staffed toy" />
@@ -306,7 +306,7 @@
 
             <!-- card three -->
             <div
-              class="hover:shadow-card-hover flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105"
+              class="flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105 hover:shadow-card-hover animation-target"
             >
               <div class="mb-4 p-5">
                 <img src="./imgs/stuffed/stuffed-toy-3.png" alt="staffed toy" />
@@ -320,7 +320,7 @@
 
             <!-- card four -->
             <div
-              class="hover:shadow-card-hover flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105"
+              class="flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105 hover:shadow-card-hover animation-target"
             >
               <div class="mb-4 p-5">
                 <img src="./imgs/stuffed/stuffed-toy-4.png" alt="staffed toy" />
@@ -368,7 +368,7 @@
           >
             <!-- card one -->
             <div
-              class="hover:shadow-card-hover flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105"
+              class="flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105 hover:shadow-card-hover animation-target"
             >
               <div class="mb-4 p-5">
                 <img src="./imgs/wood/wood-toy-2.png" alt="wood toy" />
@@ -384,7 +384,7 @@
 
             <!-- card two -->
             <div
-              class="hover:shadow-card-hover flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105"
+              class="flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105 hover:shadow-card-hover animation-target"
             >
               <div class="mb-4 p-5">
                 <img src="./imgs/wood/wood-toy-3.png" alt="wood toy" />
@@ -400,7 +400,7 @@
 
             <!-- card three -->
             <div
-              class="hover:shadow-card-hover flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105"
+              class="flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105 hover:shadow-card-hover animation-target"
             >
               <div class="mb-4 p-5">
                 <img src="./imgs/wood/wood-toy-4.png" alt="wood toy" />
@@ -416,7 +416,7 @@
 
             <!-- card four -->
             <div
-              class="hover:shadow-card-hover flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105"
+              class="flex flex-col items-center justify-center rounded-2xl bg-white p-6 pb-8 shadow-scroll-btn transition hover:scale-105 hover:shadow-card-hover animation-target"
             >
               <div class="mb-4 p-5">
                 <img src="./imgs/wood/wood-toy-1.png" alt="wood toy" />
@@ -437,7 +437,7 @@
       <section
         class="bg-[0px_0px,_50%_50% bg-about bg-cover bg-fixed bg-center px-7 pb-28 pt-16 text-center md:pt-[120px]"
       >
-        <div class="container grid place-content-center text-white">
+        <div class="container grid place-content-center text-white animation-target">
           <p class="mb-4 text-[13px] font-semibold leading-4">About The Shop</p>
           <h2 class="mb-4 font-varela text-4xl leading-[44px]">
             Watch Our Story
@@ -495,15 +495,15 @@
                 copy
               </p>
               <a
-                class="hover:shadow-accent-btn-hover mx-auto block w-fit rounded-full bg-accent px-7 py-3 text-sm font-semibold leading-6 text-white transition duration-300 hover:scale-105 md:mx-0"
+                class="mx-auto block w-fit rounded-full bg-accent px-7 py-3 text-sm font-semibold leading-6 text-white transition duration-300 hover:scale-105 hover:shadow-accent-btn-hover md:mx-0"
                 href="/"
                 >GET IT NOW!</a
               >
             </div>
 
             <!-- right col -->
-            <div class="flex-1 px-4">
-              <img src="./imgs/side.jpeg" alt="two boys" class="rounded-2xl" />
+            <div class="flex-1 px-4 ">
+              <img src="./imgs/side.jpeg" alt="two boys" class="rounded-2xl animation-target" />
             </div>
           </div>
         </div>
@@ -513,7 +513,7 @@
       <section>
         <div class="container sm:px-20 lg:px-0">
           <div
-            class="flex flex-col items-center justify-between gap-12 rounded-2xl bg-white px-8 py-10 shadow-scroll-btn sm:p-12 lg:flex-row"
+            class="flex flex-col items-center justify-between gap-12 rounded-2xl bg-white px-8 py-10 shadow-scroll-btn sm:p-12 lg:flex-row animation-target"
           >
             <!-- left info -->
             <div
@@ -546,7 +546,7 @@
               />
               <button
                 type="submit"
-                class="hover:shadow-accent-btn-hover w-full rounded-full bg-accent px-7 py-3 text-sm font-semibold leading-6 text-white transition duration-300 hover:scale-105 lg:w-fit"
+                class="w-full rounded-full bg-accent px-7 py-3 text-sm font-semibold leading-6 text-white transition duration-300 hover:scale-105 hover:shadow-accent-btn-hover lg:w-fit"
               >
                 Subscribe
               </button>
@@ -572,11 +572,11 @@
 
           <!-- gallery -->
           <div
-            class="mb-[72px] mt-20 grid grid-cols-3 gap-2 md:gap-4 lg:grid-cols-6"
+            class="mb-[72px] mt-20 grid grid-cols-3 gap-2 md:gap-4 lg:grid-cols-6 animation-target"
           >
             <a
               href="/"
-              class="hover:shadow-card-hover overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105"
+              class="overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-card-hover"
             >
               <img
                 src="./imgs/insta/insta-6.jpg "
@@ -586,7 +586,7 @@
             </a>
             <a
               href="/"
-              class="hover:shadow-card-hover overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105"
+              class="overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-card-hover"
             >
               <img
                 src="./imgs/insta/insta-4.jpg "
@@ -596,7 +596,7 @@
             </a>
             <a
               href="/"
-              class="hover:shadow-card-hover overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105"
+              class="overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-card-hover"
             >
               <img
                 src="./imgs/insta/insta-3.jpg "
@@ -606,7 +606,7 @@
             </a>
             <a
               href="/"
-              class="hover:shadow-card-hover overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105"
+              class="overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-card-hover"
             >
               <img
                 src="./imgs/insta/insta-2.jpg "
@@ -616,7 +616,7 @@
             </a>
             <a
               href="/"
-              class="hover:shadow-card-hover overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105"
+              class="overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-card-hover"
             >
               <img
                 src="./imgs/insta/insta-1.jpg "
@@ -626,7 +626,7 @@
             </a>
             <a
               href="/"
-              class="hover:shadow-card-hover overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105"
+              class="overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-card-hover"
             >
               <img
                 src="./imgs/insta/insta-5.jpg "
@@ -637,7 +637,7 @@
           </div>
 
           <a
-            class="hover:shadow-accent-btn-hover mx-auto block w-fit rounded-full bg-accent px-7 py-3 text-sm font-semibold leading-6 text-white transition duration-300 hover:scale-105"
+            class="mx-auto block w-fit rounded-full bg-accent px-7 py-3 text-sm font-semibold leading-6 text-white transition duration-300 hover:scale-105 hover:shadow-accent-btn-hover"
             href="/"
             >See More Photos</a
           >
@@ -759,7 +759,7 @@
         </div>
         <!-- bottom section -->
         <div
-          class="mt-8 flex flex-col justify-between gap-1.5 border-t border-white/20 py-3 lg:mt-12 md:flex-row lg:items-center lg:py-8"
+          class="mt-8 flex flex-col justify-between gap-1.5 border-t border-white/20 py-3 md:flex-row lg:mt-12 lg:items-center lg:py-8"
         >
           <p class="pt-1.5 text-[11px] lg:pt-0">
             Created with love by
@@ -783,5 +783,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
