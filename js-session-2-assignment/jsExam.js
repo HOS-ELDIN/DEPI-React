@@ -8,7 +8,7 @@
 function isPalindrome(word) {
 	let reversedWord = word.split("").reverse().join("");
 
-	if (word === reversedWord) {
+	if (word.toLowerCase() === reversedWord.toLowerCase()) {
 		console.log(`the word ${word} is palindrome`);
 	} else {
 		console.log(`the word ${word} is not palindrome`);
