@@ -47,15 +47,23 @@ const ob = {
 	education: "engineer",
 	kids: 2,
 };
+
+Object.prototype.another = 20;
 function sumObjectValues(object) {
 	let sum = 0;
-	for (const key in object) {
+	// for (const key in object) {
+	// 	if (typeof object[key] === "number" && Object.keys(object).includes(key)) {
+	// 		sum += object[key];
+	// 	}
+	// }
+
+	Object.keys(object).forEach((key) => {
 		if (typeof object[key] === "number") {
 			sum += object[key];
 		}
-	}
+	});
 
-	console.log(sum);
+	console.log(sum, "hossam");
 }
 sumObjectValues(ob);
 
@@ -110,6 +118,22 @@ console.log(calculator.divide(10, 3));
 console.log(calculator.add(10, 3));
 console.log(calculator.subtract(10, 3));
 console.log(calculator.multiply(10, 3));
+
+// the correct answer
+function calculatorFunc(num1, num2) {
+	function sum() {
+		return num1 + num2;
+	}
+	function mul() {
+		return num1 * num2;
+	}
+	return { sum, mul };
+}
+
+let calc = calculatorFunc(10, 20);
+console.log(calc);
+console.log(calc.sum); // will return the function itself
+console.log(calc.sum()); // will return the excution of the function
 
 // 6- Write a function which can return multiple values from a function (10 points)
 
