@@ -62,7 +62,7 @@ let res = {
 50;
 
 //15
-let array = ["hos", "eldin", "dd", "sas"];
+let array = ["hos", "eldin", "dd", "sas","hos"];
 
 let result = array.reduce((x, y) => {
 	if (!x[y]) {
