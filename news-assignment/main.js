@@ -10,14 +10,14 @@ const getSportsNews = () => {
 };
 
 const cardsContainer = document.querySelector(".cards-container");
-const detailedPageBody = document.querySelector("body#details");
+const detailedContainer = document.querySelector(".detailed-container");
+const imgPlaceholder = "./imgs/placeholder.jpg";
 
 const renderCards = async () => {
 	const news = await getSportsNews();
 
 	news.forEach((card) => {
 		let cardDiv = document.createElement("div");
-		const imgPlaceholder = "./imgs/placeholder.jpg";
 
 		const date = new Date(card.publishedAt);
 		const formatedDate = date.toLocaleDateString("ar-EG");
@@ -36,17 +36,15 @@ const renderCards = async () => {
 												}</h5>
                     </a>
 
-                    <div class="flex items-center justify-between text-sm mb-5">
-                    <span class="bg-blue-600 text-white rounded-full px-3 py-0.5 font-medium">${formatedDate}</span>
+                    <div class="flex items-center justify-between text-sm mb-5 gap-5">
+                    <span class="bg-blue-600 text-white rounded-full px-3 py-0.5 font-medium shrink-0">${formatedDate}</span>
                     <span class="truncate">${card.author}</span>
                     </div>
 
                     <div class="flex items-center justify-between">
-                      <button onclick="renderDetailedPage('${
-												card.title
-											}','${card.urlToImage}','${
-			card.content
-		}')" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 ">
+                      <button onclick="renderDetailedPage('${encodeURIComponent(
+												JSON.stringify(card)
+											)}')" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 ">
                           تفاصيل الخبر
                       </button>
                       <a href="${
@@ -63,26 +61,46 @@ const renderCards = async () => {
 	});
 };
 
-const renderDetailedPage = (title, imgUrl, content) => {
-	let url = new URL(window.location + "details");
+const renderDetailedPage = (card) => {
+	const article = JSON.parse(decodeURIComponent(card));
+	let detailedView = document.createElement("div");
+	detailedView.className = "container my-8 mx-auto";
 
-	// Create URLSearchParams object
-	let params = new URLSearchParams();
+	detailedView.innerHTML = `
+			<div class="flex items-center justify-between mb-5 gap-8">
+				<h1 class="text-3xl leading-normal ">
+					${article.title}
+				</h1>
+				<button onclick="backToHome()" class="inline-flex items-center px-6 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 ">
+						عودة
+				</button>
+			</div>
+			<img
+				src="${article.urlToImage ? article.urlToImage : imgPlaceholder}"
+				class="mx-auto"
+				alt=""
+			/>
 
-	// Add query parameters
-	params.set("title", title);
-	params.set("imgUrl", imgUrl);
-	params.set("content", content);
+			<p class="mt-8">
+			${
+				article.content
+					? article.content
+					: "لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من الزمن لم تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعة والتنضيد الإلكتروني. انتشر	بشكل كبير في تينيّات هذا القرن مع إصدار رقائق ليتراسيت (Letraset)	البلاستيكية تحوي مقاطع من هذا النص، وعاد لينتشر مرة أخرى مؤخراَ ع ظهور برامج النشر الإلكتروني مثل ألدوس بايج مايكر (Aldus PageMaker) والتي	حوت أيضاً على نسخ من نص لوريم إيبسوم."
+			}
+			</p>
+	
+	`;
 
-	// Update the URL object with the new search parameters
-	url.search = params.toString();
+	cardsContainer.classList.add("hidden");
+	detailedContainer.innerHTML = "";
+	detailedContainer.classList.remove("hidden");
+	detailedContainer.appendChild(detailedView);
+};
 
-	// Log the updated URL
-	console.log(url.toString()); 
-
-	// To redirect to the new URL
-	window.location.href = url.toString();
-	// history.pushState({}, '', url.toString());
+const backToHome = () => {
+	detailedContainer.classList.add("hidden");
+	detailedContainer.innerHTML = "";
+	cardsContainer.classList.remove("hidden");
 };
 
 window.addEventListener("DOMContentLoaded", renderCards);
