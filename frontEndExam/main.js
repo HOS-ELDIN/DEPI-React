@@ -61,10 +61,11 @@ false;
 false;
 
 // 6- Static binding is being used for overloaded methods and dynamic binding is being used for overridden/overriding method
-true;
+true; //static poly
 
 // 7- binding object state(fields) and behavior(methods) together. If you are creating class, you are doing encapsulation.
-true;
+true; //dynamic poly
+
 // 8- Polymorphism is a object oriented programming feature that allows us to perform a single action in different ways.
 true;
 
