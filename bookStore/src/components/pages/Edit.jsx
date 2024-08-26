@@ -26,7 +26,7 @@ function Edit() {
 	};
 
 	return (
-		<>
+		<div>
 			<header
 				className="bg-success my-5 py-4 rounded-4 container mx-auto w-50 
             text-center text-light"
@@ -88,7 +88,7 @@ function Edit() {
 					/>
 				</form>
 			</section>
-		</>
+		</div>
 	);
 }
 

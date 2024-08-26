@@ -17,7 +17,7 @@ function Details() {
   }
 
   return (
-    <>
+    <div>
             <header className="bg-dark my-5 py-4 rounded-4 container mx-auto w-50 
             text-center text-light">
                 <h2>Books List</h2>
@@ -34,7 +34,7 @@ function Details() {
                 <button className="btn btn-dark my-2" 
                 onClick={redirectToHome}>Return to home</button>
             </section>
-    </>
+    </div>
   )
 }
 

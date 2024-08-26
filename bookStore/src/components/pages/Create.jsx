@@ -24,7 +24,7 @@ function Create() {
         }
     }
     return ( 
-        <>
+        <div>
             <header className="bg-dark my-5 py-4 rounded-4 container mx-auto w-50 
             text-center text-light">
                 <h2>Create New Book</h2>
@@ -59,7 +59,7 @@ function Create() {
                 <input type="submit" value="Add Book" className="btn btn-dark my-2" />
                </form>
             </section>
-        </>
+        </div>
      );
 }
 

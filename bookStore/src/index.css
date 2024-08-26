@@ -1,5 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 
 body {
-  font-family: "Roboto Condensed", sans-serif;
+	font-family: "Roboto Condensed", sans-serif;
+  height: 100dvh;
+}
+
+#root {
+  height: 100%;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
 }
