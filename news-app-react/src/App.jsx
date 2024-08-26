@@ -21,7 +21,7 @@ function App() {
 		getNews();
 	}, []);
 	return (
-		<>
+		<div className="flex flex-col w-full">
 			<h1 className="capitalize text-center text-4xl py-8 border-b font-semibold">
 				api news assignment
 			</h1>
@@ -40,7 +40,7 @@ function App() {
 					element={<NotFound />}
 				/>
 			</Routes>
-		</>
+		</div>
 	);
 }
 
